@@ -1,0 +1,153 @@
+[
+  {
+    "id": 1,
+    "name": "Folkeparken",
+    "distance": 3,
+    "gpx": null
+  },
+  {
+    "id": 1.1,
+    "name": "Folkeparken",
+    "distance": 7,
+    "gpx": null
+  },
+  {
+    "id": 2,
+    "name": "Reinen",
+    "distance": 5,
+    "monitored": true,
+    "gpx": null
+  },
+  {
+    "id": 2.1,
+    "name": "Reinen",
+    "distance": 10,
+    "monitored": true,
+    "gpx": null
+  },
+  {
+    "id": 3,
+    "name": "PWCLøpet",
+    "description": "Holtbakken opp",
+    "gpx": null,
+    "distance": 3.5
+  },
+  {
+    "id": 4,
+    "name": "Krokenmila",
+    "monitored": true,
+    "gpx": null,
+    "distance": 5
+  },
+  {
+    "id": 4.1,
+    "name": "Krokenmila",
+    "monitored": true,
+    "gpx": null,
+    "distance": 10
+  },
+  {
+    "id": 5,
+    "name": "Reinenhalvmaraton",
+    "monitored": true,
+    "gpx": null,
+    "distance": 5
+  },
+  {
+    "id": 5.1,
+    "name": "Reinenhalvmaraton",
+    "monitored": true,
+    "gpx": null,
+    "distance": 10
+  },
+  {
+    "id": 5.2,
+    "name": "Reinenhalvmaraton",
+    "monitored": true,
+    "gpx": null,
+    "distance": 21.1
+  },
+  {
+    "id": 6,
+    "name": "Charlottenlund – vanntårnet",
+    "gpx": null,
+    "distance": 4
+  },
+  {
+    "id": 6.1,
+    "name": "Charlottenlund – vanntårnet",
+    "gpx": null,
+    "distance": 8
+  },
+  {
+    "id": 7,
+    "name": "Prestvannet",
+    "description": "2-3 runder",
+    "gpx": null,
+    "distance": 1.7
+  },
+  {
+    "id": 7.1,
+    "name": "Prestvannet",
+    "description": "2-3 runder",
+    "gpx": null,
+    "distance": 3.4
+  },
+  {
+    "id": 8,
+    "name": "Øya på langs",
+    "gpx": null,
+    "distance": 5
+  },
+  {
+    "id": 8.1,
+    "name": "Øya på langs",
+    "gpx": null,
+    "distance": 11
+  },
+  {
+    "id": 9,
+    "name": "Tromsdalen – Dalheim",
+    "gpx": null,
+    "distance": 3
+  },
+  {
+    "id": 9.1,
+    "name": "Tromsdalen – Dalheim",
+    "gpx": null,
+    "distance": 7
+  },
+  {
+    "id": 10,
+    "name": "Håkøyahalvmaraton",
+    "monitored": true,
+    "gpx": null,
+    "distance": 5
+  },
+  {
+    "id": 10.1,
+    "name": "Håkøyahalvmaraton",
+    "monitored": true,
+    "gpx": null,
+    "distance": 10
+  },
+  {
+    "id": 10.2,
+    "name": "Håkøyahalvmaraton",
+    "monitored": true,
+    "gpx": null,
+    "distance": 21.1
+  },
+  {
+    "id": 11,
+    "name": "Prestvannet – skibrua",
+    "gpx": null,
+    "distance": 5.2
+  },
+  {
+    "id": 12,
+    "name": "Folkeparken – langnesbakken – sommerlyst",
+    "gpx": null,
+    "distance": 6
+  }
+]

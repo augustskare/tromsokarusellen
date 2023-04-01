@@ -1,0 +1,130 @@
+[
+  {
+    "title": "Folkeparken",
+    "date": "2023-04-25T19:00:00+02:00",
+    "routes": [
+      1,
+      1.1
+    ]
+  },
+  {
+    "title": "Reinen",
+    "date": "2023-05-02T19:00:00+02:00",
+    "routes": [
+      2,
+      2.1
+    ]
+  },
+  {
+    "title": "PWCLøpet",
+    "description": "Holtbakken opp",
+    "date": "2023-05-09T19:00:00+02:00",
+    "routes": [
+      3
+    ]
+  },
+  {
+    "title": "Krokenmila",
+    "date": "2023-05-15T19:00:00+02:00",
+    "routes": [
+      4,
+      4.1
+    ]
+  },
+  {
+    "title": "Reinenhalvmaraton",
+    "date": "2023-05-23T18:00:00+02:00",
+    "routes": [
+      5,
+      5.1,
+      5.2
+    ]
+  },
+  {
+    "title": "Folkeparken",
+    "date": "2023-05-30T19:00:00+02:00",
+    "routes": [
+      1,
+      1.1
+    ]
+  },
+  {
+    "title": "Charlottenlund – vanntårnet",
+    "date": "2023-06-06T19:00:00+02:00",
+    "routes": [
+      6,
+      6.1
+    ]
+  },
+  {
+    "title": "Folkeparken",
+    "date": "2023-06-13T19:00:00+02:00",
+    "routes": [
+      1,
+      1.1
+    ]
+  },
+  {
+    "title": "Prestvannet",
+    "description": "2-3 runder",
+    "date": "2023-06-20T19:00:00+02:00",
+    "routes": [
+      7,
+      7.1
+    ]
+  },
+  {
+    "title": "Øya på langs",
+    "date": "2023-06-27T19:00:00+02:00",
+    "routes": [
+      8,
+      8.1
+    ]
+  },
+  {
+    "title": "Tromsdalen – Dalheim",
+    "date": "2023-08-15T19:00:00+02:00",
+    "routes": [
+      9,
+      9.1
+    ]
+  },
+  {
+    "title": "Håkøyahalvmaraton",
+    "date": "2023-08-22T18:00:00+02:00",
+    "routes": [
+      10,
+      10.1,
+      10.2
+    ]
+  },
+  {
+    "title": "Prestvannet – skibrua",
+    "date": "2023-08-29T19:00:00+02:00",
+    "routes": [
+      11
+    ]
+  },
+  {
+    "title": "Folkeparken – langnesbakken – sommerlyst",
+    "date": "2023-09-05T19:00:00+02:00",
+    "routes": [
+      12
+    ]
+  },
+  {
+    "title": "Reinen",
+    "date": "2023-09-12T19:00:00+02:00",
+    "routes": [
+      2,
+      2.1
+    ]
+  },
+  {
+    "title": "Prestvannet – skibrua",
+    "date": "2023-09-19T19:00:00+02:00",
+    "routes": [
+      11
+    ]
+  }
+]

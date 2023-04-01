@@ -1,18 +1,17 @@
 import type { EventAttributes } from "ics";
 import { createEvents as icsCreateEvents } from "ics";
-import races from "~/races.json";
-import routes from "~/routes.json";
+import { getAllRaces } from "~/data/races.server";
 
 export async function loader() {
   try {
     const events = await createEvents(
-      races.map((race) => {
+      getAllRaces().map((race) => {
         const date = new Date(race.date);
 
         return {
           calName: "Tromsøkarusellen",
           title: "Tromsøkarusellen",
-          description: routes.find((route) => route.id === race.routeId)?.name,
+          description: race.title,
           duration: { hours: 1 },
           start: [
             date.getFullYear(),

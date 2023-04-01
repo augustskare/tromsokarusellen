@@ -1,16 +1,14 @@
+import { json } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
-import races from "~/races.json";
-import routes from "~/routes.json";
+import { getAllRaces } from "~/data/races.server";
 
 export function loader() {
-  return { races, routes };
+  const races = getAllRaces();
+  return json({ races });
 }
 
 export default function Index() {
-  const data = useLoaderData<typeof loader>();
-  const races = [...data.races];
-  const nextRace = races.shift();
-  const nextRoute = routes.find((j) => j.id === nextRace!.routeId);
+  const { races } = useLoaderData<typeof loader>();
 
   return (
     <>
@@ -24,34 +22,30 @@ export default function Index() {
         <h1>Tromsøkarusellen</h1>
         <a href="/calendar.ics">Abonner i din kalender</a>
       </header>
-      {nextRoute ? (
+      {/* {nextRoute ? (
         <section>
           <h2>Neste løp</h2>
 
           <article>
-            <h3>{nextRoute.name}</h3>
+            <h3>{nextRoute.title}</h3>
             <dl>
-              <Distance distance={nextRoute.length} />
+              <Distance distance={nextRoute.routes.map((r) => r.distance)} />
               <Time>{new Date(nextRace!.date)}</Time>
             </dl>
           </article>
         </section>
-      ) : null}
+      ) : null} */}
 
       <section>
         <h2>Kommende løp</h2>
         <ul>
           {races.map((race) => {
-            const route = routes.find((r) => r.id === race.routeId);
-            if (!route) {
-              return null;
-            }
             return (
               <li key={race.date}>
                 <article>
-                  <h3>{route?.name}</h3>
+                  <h3>{race.title}</h3>
                   <dl>
-                    <Distance distance={route.length} />
+                    <Distance distance={race.routes.map((r) => r?.distance)} />
                     <Time>{new Date(race.date)}</Time>
                   </dl>
                 </article>
