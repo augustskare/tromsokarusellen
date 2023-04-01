@@ -11,7 +11,8 @@ export async function loader() {
 
         return {
           calName: "Tromsøkarusellen",
-          title: routes.find((route) => route.id === race.routeId)?.name,
+          title: "Tromsøkarusellen",
+          description: routes.find((route) => route.id === race.routeId)?.name,
           duration: { hours: 1 },
           start: [
             date.getFullYear(),
