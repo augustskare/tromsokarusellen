@@ -2,6 +2,7 @@ import races from "./races.json";
 import routes from "./routes.json";
 
 interface RaceRaw {
+  id: number;
   title: string;
   description?: string;
   date: string;
@@ -28,4 +29,10 @@ export function getAllRaces(): Race[] {
       ),
     };
   });
+}
+
+export function getUpcomingRaces(): Race[] {
+  return getAllRaces().filter(
+    (race) => new Date(race.date).getTime() >= new Date().getTime()
+  );
 }

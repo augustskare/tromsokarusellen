@@ -8,11 +8,14 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
-import styles from './styles.css';
+import styles from "./styles.css";
 
-export const links: LinksFunction = () => [{
-  href: styles, rel: 'stylesheet'
-}]
+export const links: LinksFunction = () => [
+  {
+    href: styles,
+    rel: "stylesheet",
+  },
+];
 
 export default function App() {
   return (
@@ -24,6 +27,10 @@ export default function App() {
         <Links />
       </head>
       <body>
+        <header>
+          <h1>Tromsøkarusellen</h1>
+          <a href="/calendar.ics">Legg til kalender</a>
+        </header>
         <Outlet />
         <ScrollRestoration />
         <Scripts />

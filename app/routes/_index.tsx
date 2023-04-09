@@ -1,9 +1,9 @@
 import { json } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
-import { getAllRaces } from "~/data/races.server";
+import { getUpcomingRaces } from "~/data/races.server";
 
 export function loader() {
-  const races = getAllRaces();
+  const races = getUpcomingRaces();
   return json({ races });
 }
 
@@ -12,16 +12,6 @@ export default function Index() {
 
   return (
     <>
-      <header
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-        }}
-      >
-        <h1>Tromsøkarusellen</h1>
-        <a href="/calendar.ics">Abonner i din kalender</a>
-      </header>
       {/* {nextRoute ? (
         <section>
           <h2>Neste løp</h2>
@@ -38,12 +28,15 @@ export default function Index() {
 
       <section>
         <h2>Kommende løp</h2>
-        <ul>
+        <ol>
           {races.map((race) => {
             return (
               <li key={race.date}>
                 <article>
-                  <h3>{race.title}</h3>
+                  <h3>
+                    <a href={"/lop/" + race.id}>{race.title}</a>
+                  </h3>
+                  {race.description ? <p>{race.description}</p> : null}
                   <dl>
                     <Distance distance={race.routes.map((r) => r?.distance)} />
                     <Time>{new Date(race.date)}</Time>
@@ -52,7 +45,7 @@ export default function Index() {
               </li>
             );
           })}
-        </ul>
+        </ol>
       </section>
     </>
   );
