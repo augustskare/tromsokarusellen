@@ -4,32 +4,36 @@ import { getUpcomingRaces } from "~/data/races.server";
 
 export function loader() {
   const races = getUpcomingRaces();
-  return json({ races });
+  const next = races.shift();
+  const upcoming = races;
+  return json({ races: { next, upcoming } });
 }
 
 export default function Index() {
   const { races } = useLoaderData<typeof loader>();
-
+  const nextRace = races.next;
   return (
     <>
-      {/* {nextRoute ? (
+      {nextRace ? (
         <section>
           <h2>Neste løp</h2>
 
           <article>
-            <h3>{nextRoute.title}</h3>
+            <h3>
+              <a href={"/lop/" + nextRace.id}>{nextRace.title}</a>
+            </h3>
             <dl>
-              <Distance distance={nextRoute.routes.map((r) => r.distance)} />
-              <Time>{new Date(nextRace!.date)}</Time>
+              <Distance distance={nextRace.routes.map((r) => r.distance)} />
+              <Time>{new Date(nextRace.date)}</Time>
             </dl>
           </article>
         </section>
-      ) : null} */}
+      ) : null}
 
       <section>
         <h2>Kommende løp</h2>
         <ol>
-          {races.map((race) => {
+          {races.upcoming.map((race) => {
             return (
               <li key={race.date}>
                 <article>
