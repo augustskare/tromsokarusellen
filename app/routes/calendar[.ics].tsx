@@ -10,7 +10,7 @@ export async function loader() {
 
         return {
           calName: "Tromsøkarusellen",
-          id: `${date.getTime()}@tromsokarusellen.no`,
+          uid: `${date.getTime()}@tromsokarusellen.no`,
           title: `Tromsøkarusellen (${race.title})`,
           description: race.description,
           duration: { hours: 1 },
@@ -31,7 +31,9 @@ export async function loader() {
         "Content-Type": "text/plain",
       },
     });
-  } catch (error) {}
+  } catch (error) {
+    console.log(error);
+  }
 
   return new Response("Server error", { status: 500 });
 }
