@@ -16,7 +16,7 @@ interface Route {
   gpx: string | null;
 }
 
-interface Race extends Omit<RaceRaw, "routes"> {
+export interface Race extends Omit<RaceRaw, "routes"> {
   routes: Route[];
 }
 

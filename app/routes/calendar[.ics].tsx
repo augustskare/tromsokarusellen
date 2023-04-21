@@ -10,8 +10,9 @@ export async function loader() {
 
         return {
           calName: "Tromsøkarusellen",
-          title: "Tromsøkarusellen",
-          description: race.title,
+          id: `${date.getTime()}@tromsokarusellen.no`,
+          title: `Tromsøkarusellen (${race.title})`,
+          description: race.description,
           duration: { hours: 1 },
           start: [
             date.getFullYear(),

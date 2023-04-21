@@ -29,7 +29,7 @@ export default function App() {
       <body>
         <header>
           <h1>Tromsøkarusellen</h1>
-          <a href="/calendar.ics">Legg til kalender</a>
+          <a href="/calendar.ics">Legg til i kalenderen din</a>
         </header>
         <Outlet />
         <ScrollRestoration />

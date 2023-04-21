@@ -1,5 +1,6 @@
 import { json } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
+import type { Race } from "~/data/races.server";
 import { getUpcomingRaces } from "~/data/races.server";
 
 export function loader() {
@@ -18,15 +19,7 @@ export default function Index() {
         <section>
           <h2>Neste løp</h2>
 
-          <article>
-            <h3>
-              <a href={"/lop/" + nextRace.id}>{nextRace.title}</a>
-            </h3>
-            <dl>
-              <Distance distance={nextRace.routes.map((r) => r.distance)} />
-              <Time>{new Date(nextRace.date)}</Time>
-            </dl>
-          </article>
+          <SingleRace race={nextRace} />
         </section>
       ) : null}
 
@@ -36,16 +29,7 @@ export default function Index() {
           {races.upcoming.map((race) => {
             return (
               <li key={race.date}>
-                <article>
-                  <h3>
-                    <a href={"/lop/" + race.id}>{race.title}</a>
-                  </h3>
-                  {race.description ? <p>{race.description}</p> : null}
-                  <dl>
-                    <Distance distance={race.routes.map((r) => r?.distance)} />
-                    <Time>{new Date(race.date)}</Time>
-                  </dl>
-                </article>
+                <SingleRace race={race} />
               </li>
             );
           })}
@@ -55,32 +39,26 @@ export default function Index() {
   );
 }
 
-function Distance(props: { distance: number[] }) {
+function SingleRace({ race }: { race: Race }) {
+  const date = new Date(race.date);
   return (
-    <>
-      <dt>Distanser</dt>
-      <dd>
-        {" "}
+    <article>
+      <h3>{race.title}</h3>
+      <time dateTime={date.toISOString()}>
+        {new Intl.DateTimeFormat("no", {
+          day: "2-digit",
+          month: "long",
+          hour: "2-digit",
+          minute: "2-digit",
+        }).format(date)}
+      </time>
+      <p>
+        Distanse:{" "}
         {new Intl.ListFormat("no", {
           style: "long",
           type: "conjunction",
-        }).format(props.distance.map((l) => l + "km"))}
-      </dd>
-    </>
-  );
-}
-
-function Time(props: { children: Date }) {
-  return (
-    <>
-      <dt>Dato</dt>
-      <dd>
-        <time dateTime={props.children.toISOString()}>
-          {new Intl.DateTimeFormat("no", {
-            dateStyle: "full",
-          }).format(props.children)}
-        </time>
-      </dd>
-    </>
+        }).format(race.routes.map((r) => r.distance).map((l) => l + "km"))}
+      </p>
+    </article>
   );
 }
