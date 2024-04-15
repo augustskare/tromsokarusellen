@@ -142,5 +142,149 @@
     "routes": [
       11
     ]
+  },
+  {
+    "id": 17,
+    "title": "Folkeparken",
+    "date": "2024-04-30T19:00:00+02:00",
+    "routes": [
+      1,
+      1.1
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Reinen",
+    "date": "2024-05-07T19:00:00+02:00",
+    "routes": [
+      2,
+      2.1
+    ]
+  },
+  {
+    "id": 19,
+    "title": "PWCLøpet",
+    "description": "Holtbakken opp",
+    "date": "2024-05-14T19:00:00+02:00",
+    "routes": [
+      3
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Krokenmila",
+    "date": "2024-05-21T19:00:00+02:00",
+    "routes": [
+      4,
+      4.1
+    ]
+  },
+  {
+    "id": 21,
+    "title": "Reinenhalvmaraton",
+    "date": "2024-05-28T18:00:00+02:00",
+    "routes": [
+      5,
+      5.1,
+      5.2
+    ]
+  },
+  {
+    "id": 22,
+    "title": "Folkeparken",
+    "date": "2024-06-06T19:00:00+02:00",
+    "routes": [
+      1,
+      1.1
+    ]
+  },
+  {
+    "id": 23,
+    "title": "Reinen",
+    "date": "2024-06-11T19:00:00+02:00",
+    "routes": [
+      2,
+      2.1
+    ]
+  },
+  {
+    "id": 24,
+    "title": "Folkeparken",
+    "date": "2024-06-18T19:00:00+02:00",
+    "routes": [
+      1,
+      1.1
+    ]
+  },
+  {
+    "id": 25,
+    "title": "Prestvannet",
+    "description": "2-3 runder",
+    "date": "2024-06-25T19:00:00+02:00",
+    "routes": [
+      7,
+      7.1
+    ]
+  },
+  {
+    "id": 26,
+    "title": "Øya på langs",
+    "date": "2024-08-13T19:00:00+02:00",
+    "routes": [
+      8,
+      8.1
+    ]
+  },
+  {
+    "id": 27,
+    "title": "Håkøyahalvmaraton",
+    "date": "2024-08-20T18:00:00+02:00",
+    "routes": [
+      10,
+      10.1,
+      10.2
+    ]
+  },
+  {
+    "id": 29,
+    "title": "Charlottenlund – vanntårnet",
+    "date": "2024-08-27T19:00:00+02:00",
+    "routes": [
+      6,
+      6.1
+    ]
+  },
+  {
+    "id": 30,
+    "title": "Prestvannet – skibrua",
+    "date": "2024-09-03T19:00:00+02:00",
+    "routes": [
+      11
+    ]
+  },
+  {
+    "id": 31,
+    "title": "Folkeparken – langnesbakken – sommerlyst",
+    "date": "2024-09-10T19:00:00+02:00",
+    "routes": [
+      12
+    ]
+  },
+  {
+    "id": 32,
+    "title": "Reinen",
+    "date": "2024-09-17T19:00:00+02:00",
+    "routes": [
+      2,
+      2.1
+    ]
+  },
+  {
+    "id": 33,
+    "title": "Prestvannet – skibrua",
+    "date": "2024-09-24T19:00:00+02:00",
+    "routes": [
+      11
+    ]
   }
 ]
