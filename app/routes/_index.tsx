@@ -1,7 +1,9 @@
-import { json } from "@remix-run/node";
+import { json } from "@vercel/remix";
 import { useLoaderData } from "@remix-run/react";
 import type { Race } from "~/data/races.server";
 import { getUpcomingRaces } from "~/data/races.server";
+
+export const config = { runtime: "edge" };
 
 export function loader() {
   const races = getUpcomingRaces();

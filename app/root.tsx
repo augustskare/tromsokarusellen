@@ -1,14 +1,14 @@
-import type { LinksFunction } from "@remix-run/node";
+import type { LinksFunction } from "@vercel/remix";
 import {
   Links,
-  LiveReload,
   Meta,
   Outlet,
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import styles from "./styles.css?url";
 
-import styles from "./styles.css";
+export const config = { runtime: "edge" };
 
 export const links: LinksFunction = () => [
   {
@@ -34,7 +34,6 @@ export default function App() {
         <Outlet />
         <ScrollRestoration />
         <Scripts />
-        <LiveReload />
       </body>
     </html>
   );

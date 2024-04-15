@@ -1,30 +1,34 @@
 {
   "private": true,
   "sideEffects": false,
+  "type": "module",
   "scripts": {
-    "build": "remix build",
-    "dev": "remix dev",
-    "start": "remix-serve build",
+    "dev": "remix vite:dev",
+    "build": "remix vite:build",
+    "start": "remix-serve ./build/server/index.js",
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@remix-run/node": "^1.15.0",
-    "@remix-run/react": "^1.15.0",
-    "@remix-run/serve": "^1.15.0",
+    "@remix-run/node": "^2.8.1",
+    "@remix-run/react": "2.8.1",
+    "@remix-run/serve": "2.8.1",
+    "@vercel/remix": "^2.8.1-patch.2",
     "ics": "^3.1.0",
-    "isbot": "latest",
+    "isbot": "^4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@remix-run/dev": "^1.15.0",
-    "@remix-run/eslint-config": "^1.15.0",
+    "@remix-run/dev": "2.8.1",
+    "@remix-run/eslint-config": "2.8.1",
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.8",
     "eslint": "^8.27.0",
-    "typescript": "^4.8.4"
+    "typescript": "^5.4.5",
+    "vite": "^5.2.8",
+    "vite-tsconfig-paths": "^4.3.2"
   },
   "engines": {
-    "node": ">=16"
+    "node": ">=18"
   }
 }
