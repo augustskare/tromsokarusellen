@@ -200,5 +200,101 @@
     "title": "Prestvannet – skibrua",
     "date": "2024-10-01T19:00:00+02:00",
     "routes": [11]
+  },
+  {
+    "id": 35,
+    "title": "Folkparken",
+    "date": "2025-05-06T19:00:00+02:00",
+    "routes": [1, 1.1]
+  },
+  {
+    "id": 36,
+    "title": "Reinen",
+    "date": "2025-05-13T19:00:00+02:00",
+    "routes": [2, 2.1]
+  },
+  {
+    "id": 37,
+    "title": "PWC-løpet, Holtbakken Opp",
+    "date": "2025-05-20T19:00:00+02:00",
+    "routes": [3]
+  },
+  {
+    "id": 38,
+    "title": "Krokenmila",
+    "date": "2025-05-27T19:00:00+02:00",
+    "routes": [4, 4.1]
+  },
+  {
+    "id": 39,
+    "title": "Reinen Halvmaraton",
+    "date": "2025-06-03T18:00:00+02:00",
+    "routes": [5, 5.1, 5.2]
+  },
+  {
+    "id": 40,
+    "title": "Folkparken",
+    "date": "2025-06-10T19:00:00+02:00",
+    "routes": [1, 1.1]
+  },
+  {
+    "id": 41,
+    "title": "Reinen",
+    "date": "2025-06-17T19:00:00+02:00",
+    "routes": [2, 2.1]
+  },
+  {
+    "id": 42,
+    "title": "Folkparken",
+    "date": "2025-06-24T19:00:00+02:00",
+    "routes": [1, 1.1]
+  },
+  {
+    "id": 43,
+    "title": "Øya på langs",
+    "date": "2025-07-01T19:00:00+02:00",
+    "routes": [8, 8.1]
+  },
+  {
+    "id": 44,
+    "title": "Håkøya Halvmaraton",
+    "date": "2025-08-12T18:00:00+02:00",
+    "routes": [10, 10.1, 10.2]
+  },
+  {
+    "id": 45,
+    "title": "Folkparken - Langnesbakken - Sommerlyst",
+    "date": "2025-08-19T19:00:00+02:00",
+    "routes": [12]
+  },
+  {
+    "id": 46,
+    "title": "Prestvannet - Skibrua",
+    "date": "2025-08-26T19:00:00+02:00",
+    "routes": [11]
+  },
+  {
+    "id": 47,
+    "title": "Reinen",
+    "date": "2025-09-02T19:00:00+02:00",
+    "routes": [2, 2.1]
+  },
+  {
+    "id": 48,
+    "title": "Folkparken",
+    "date": "2025-09-09T19:00:00+02:00",
+    "routes": [1, 1.1]
+  },
+  {
+    "id": 49,
+    "title": "Krokenmila",
+    "date": "2025-09-16T18:00:00+02:00",
+    "routes": [4, 4.1]
+  },
+  {
+    "id": 50,
+    "title": "Prestvannet - Skibrua",
+    "date": "2025-09-23T18:00:00+02:00",
+    "routes": [11]
   }
 ]
