@@ -1,27 +1,14 @@
-import type { LinksFunction } from "@vercel/remix";
-import {
-  Links,
-  Meta,
-  Outlet,
-  Scripts,
-  ScrollRestoration,
-} from "@remix-run/react";
+import { Links, Meta, Outlet, Scripts, ScrollRestoration } from "react-router";
 import styles from "./styles.css?url";
 
 export const config = { runtime: "edge" };
-
-export const links: LinksFunction = () => [
-  {
-    href: styles,
-    rel: "stylesheet",
-  },
-];
 
 export default function App() {
   return (
     <html lang="en">
       <head>
         <Meta />
+        <link rel="stylesheet" href={styles} />
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <Links />

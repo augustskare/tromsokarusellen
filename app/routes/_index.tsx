@@ -1,5 +1,4 @@
-import { json } from "@vercel/remix";
-import { useLoaderData } from "@remix-run/react";
+import { data, useLoaderData } from "react-router";
 import type { Race } from "~/data/races.server";
 import { getUpcomingRaces } from "~/data/races.server";
 
@@ -9,7 +8,7 @@ export function loader() {
   const races = getUpcomingRaces();
   const next = races.shift();
   const upcoming = races;
-  return json({ races: { next, upcoming } });
+  return data({ races: { next, upcoming } });
 }
 
 export default function Index() {
