@@ -1,6 +1,6 @@
-import { data, useLoaderData } from "react-router";
 import type { Race } from "~/data/races.server";
 import { getUpcomingRaces } from "~/data/races.server";
+import type { Route } from "./+types/_index";
 
 export const config = { runtime: "edge" };
 
@@ -8,12 +8,13 @@ export function loader() {
   const races = getUpcomingRaces();
   const next = races.shift();
   const upcoming = races;
-  return data({ races: { next, upcoming } });
+  return { races: { next, upcoming } };
 }
 
-export default function Index() {
-  const { races } = useLoaderData<typeof loader>();
+export default function Index(props: Route.ComponentProps) {
+  const races = props.loaderData.races;
   const nextRace = races.next;
+
   return (
     <>
       {nextRace ? (
