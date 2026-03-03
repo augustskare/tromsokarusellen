@@ -296,5 +296,95 @@
     "title": "Prestvannet - Skibrua",
     "date": "2025-09-23T18:00:00+02:00",
     "routes": [11]
+  },
+  {
+    "id": 51,
+    "title": "Folkeparken",
+    "date": "2026-05-05T19:00:00+02:00",
+    "routes": [1, 1.1]
+  },
+  {
+    "id": 52,
+    "title": "Reinen",
+    "date": "2026-05-12T19:00:00+02:00",
+    "routes": [2, 2.1]
+  },
+  {
+    "id": 53,
+    "title": "PWC-løpet, Holtbakken Opp",
+    "date": "2026-05-19T19:00:00+02:00",
+    "routes": [3]
+  },
+  {
+    "id": 54,
+    "title": "Krokenmila",
+    "date": "2026-05-26T19:00:00+02:00",
+    "routes": [4, 4.1]
+  },
+  {
+    "id": 55,
+    "title": "Reinen Halvmaraton",
+    "date": "2026-06-02T18:00:00+02:00",
+    "routes": [5, 5.1, 5.2]
+  },
+  {
+    "id": 56,
+    "title": "Folkeparken",
+    "date": "2026-06-09T19:00:00+02:00",
+    "routes": [1, 1.1]
+  },
+  {
+    "id": 57,
+    "title": "Reinen",
+    "date": "2026-06-16T19:00:00+02:00",
+    "routes": [2, 2.1]
+  },
+  {
+    "id": 58,
+    "title": "Folkeparken",
+    "date": "2026-06-23T19:00:00+02:00",
+    "routes": [1, 1.1]
+  },
+  {
+    "id": 59,
+    "title": "Øya på langs",
+    "date": "2026-06-30T19:00:00+02:00",
+    "routes": [8, 8.1]
+  },
+  {
+    "id": 60,
+    "title": "Folkeparken - Langnesbakken - Sommerlyst",
+    "date": "2026-08-11T19:00:00+02:00",
+    "routes": [12]
+  },
+  {
+    "id": 62,
+    "title": "Prestvannet - Skibrua",
+    "date": "2026-08-25T19:00:00+02:00",
+    "routes": [11]
+  },
+  {
+    "id": 63,
+    "title": "Reinen",
+    "date": "2026-09-01T19:00:00+02:00",
+    "routes": [2, 2.1]
+  },
+  {
+    "id": 64,
+    "title": "Prestvannet - Skibrua",
+    "date": "2026-09-08T19:00:00+02:00",
+    "routes": [11]
+  },
+  {
+    "id": 65,
+    "title": "Polarmiljøsenteret - Telegrafbukta t/r",
+    "date": "2026-09-15T18:00:00+02:00",
+    "routes": [14]
+  },
+  {
+    "id": 66,
+    "title": "Reinen Halvmaraton",
+    "date": "2026-09-22T18:00:00+02:00",
+    "routes": [5, 5.1, 5.2]
   }
 ]
