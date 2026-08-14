@@ -2,8 +2,6 @@ import type { Race } from "~/data/races.server";
 import { getUpcomingRaces } from "~/data/races.server";
 import type { Route } from "./+types/_index";
 
-export const config = { runtime: "edge" };
-
 export function loader() {
   const races = getUpcomingRaces();
   const next = races.shift();

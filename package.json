@@ -5,14 +5,15 @@
   "scripts": {
     "dev": "react-router dev",
     "build": "react-router build",
-    "start": "react-router-serve build/server/index.js",
-    "typecheck": "react-router typegen && tsc",
+    "preview": "npm run build && vite preview",
+    "deploy": "npm run build && wrangler deploy",
+    "cf-typegen": "wrangler types",
+    "typecheck": "wrangler types && react-router typegen && tsc",
     "format": "oxfmt .",
     "format:check": "oxfmt --check ."
   },
   "dependencies": {
     "@react-router/dev": "^8.3.0",
-    "@react-router/node": "^8.3.0",
     "ics": "^3.12.0",
     "isbot": "^5.2.1",
     "react": "^19.2.8",
@@ -20,12 +21,14 @@
     "react-router": "^8.3.0"
   },
   "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.52.1",
     "@types/node": "^26.2.0",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.4",
     "oxfmt": "^0.63.0",
     "typescript": "^7.0.2",
-    "vite": "^8.2.1"
+    "vite": "^8.2.1",
+    "wrangler": "^4.123.0"
   },
   "engines": {
     "node": ">=26"

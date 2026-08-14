@@ -1,8 +1,9 @@
 import { defineConfig } from "vite";
 import { reactRouter } from "@react-router/dev/vite";
+import { cloudflare } from "@cloudflare/vite-plugin";
 
 export default defineConfig({
-  plugins: [reactRouter()],
+  plugins: [cloudflare({ viteEnvironment: { name: "ssr" } }), reactRouter()],
   resolve: { tsconfigPaths: true },
   server: { port: 3000 },
 });
