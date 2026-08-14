@@ -24,9 +24,9 @@ export function getAllRaces(): Race[] {
   return races.map((race) => {
     return {
       ...race,
-      routes: race.routes.map((routeId) =>
-        routes.find((route) => route.id === routeId)
-      ),
+      routes: race.routes
+        .map((routeId) => routes.find((route) => route.id === routeId))
+        .filter((route) => route !== undefined),
     };
   });
 }
