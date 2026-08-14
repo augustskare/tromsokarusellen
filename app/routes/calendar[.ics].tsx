@@ -2,8 +2,6 @@ import type { EventAttributes } from "ics";
 import { createEvents as icsCreateEvents } from "ics";
 import { getAllRaces } from "~/data/races.server";
 
-export const config = { runtime: "edge" };
-
 export async function loader() {
   try {
     const events = await createEvents(
@@ -24,7 +22,7 @@ export async function loader() {
             date.getMinutes(),
           ],
         };
-      })
+      }),
     );
 
     return new Response(events, {

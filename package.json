@@ -5,28 +5,32 @@
   "scripts": {
     "dev": "react-router dev",
     "build": "react-router build",
-    "start": "react-router-serve build/server/index.js",
-    "typecheck": "react-router typegen && tsc"
+    "preview": "npm run build && vite preview",
+    "deploy": "npm run build && wrangler deploy",
+    "cf-typegen": "wrangler types",
+    "typecheck": "wrangler types && react-router typegen && tsc",
+    "format": "oxfmt .",
+    "format:check": "oxfmt --check ."
   },
   "dependencies": {
-    "@react-router/dev": "^7.13.1",
-    "@react-router/node": "^7.13.1",
-    "@vercel/react-router": "^1.2.5",
-    "ics": "^3.8.1",
-    "isbot": "^5.1.27",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4",
-    "react-router": "^7.13.1"
+    "@react-router/dev": "^8.3.0",
+    "ics": "^3.12.0",
+    "isbot": "^5.2.1",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-router": "^8.3.0"
   },
   "devDependencies": {
-    "@types/react": "^19.2.14",
-    "@types/react-dom": "^19.2.3",
-    "prettier": "3.5.3",
-    "typescript": "^5.8.3",
-    "vite": "^7.3.1",
-    "vite-tsconfig-paths": "^6.1.1"
+    "@cloudflare/vite-plugin": "^1.52.1",
+    "@types/node": "^26.2.0",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "oxfmt": "^0.63.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.2.1",
+    "wrangler": "^4.123.0"
   },
   "engines": {
-    "node": ">=22"
+    "node": ">=26"
   }
 }

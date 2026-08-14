@@ -24,15 +24,15 @@ export function getAllRaces(): Race[] {
   return races.map((race) => {
     return {
       ...race,
-      routes: race.routes.map((routeId) =>
-        routes.find((route) => route.id === routeId)
-      ),
+      routes: race.routes
+        .map((routeId) => routes.find((route) => route.id === routeId))
+        .filter((route) => route !== undefined),
     };
   });
 }
 
 export function getUpcomingRaces(): Race[] {
   return getAllRaces().filter(
-    (race) => new Date(race.date).getTime() >= new Date().getTime()
+    (race) => new Date(race.date).getTime() >= new Date().getTime(),
   );
 }

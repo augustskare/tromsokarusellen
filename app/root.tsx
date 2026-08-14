@@ -1,8 +1,6 @@
 import { Links, Meta, Outlet, Scripts, ScrollRestoration } from "react-router";
 import styles from "./styles.css?url";
 
-export const config = { runtime: "edge" };
-
 export default function App() {
   return (
     <html lang="en">
