@@ -33,6 +33,6 @@ export function getAllRaces(): Race[] {
 
 export function getUpcomingRaces(): Race[] {
   return getAllRaces().filter(
-    (race) => new Date(race.date).getTime() >= new Date().getTime()
+    (race) => new Date(race.date).getTime() >= new Date().getTime(),
   );
 }

@@ -24,7 +24,7 @@ export async function loader() {
             date.getMinutes(),
           ],
         };
-      })
+      }),
     );
 
     return new Response(events, {
