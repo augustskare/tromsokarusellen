@@ -358,6 +358,12 @@
     "routes": [12]
   },
   {
+    "id": 61,
+    "title": "Tromsøya på langs",
+    "date": "2026-08-18T19:00:00+02:00",
+    "routes": [8, 8.1]
+  },
+  {
     "id": 62,
     "title": "Prestvannet - Skibrua",
     "date": "2026-08-25T19:00:00+02:00",
